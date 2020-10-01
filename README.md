@@ -4,6 +4,7 @@
 - [Folium](https://github.com/tpb708-programacionsig-2020/leccion-10-folium/blob/master/folium.ipynb)
 
 ## Creación de un ambiente Conda y clonación del repositorio
+Ejecute estos comandos desde la línea de comandos de Anaconda, en el directorio en el que desea almacenar el repositorio clonado.
 ```shell
 # Actualización de Conda
 conda update -n base -c defaults conda
