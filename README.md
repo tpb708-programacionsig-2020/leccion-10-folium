@@ -1,5 +1,7 @@
 # Folium
 
+El repositorio correspondiente a esta lección está disponible en [https://github.com/tpb708-programacionsig-2020/leccion-10-folium/](https://github.com/tpb708-programacionsig-2020/leccion-10-folium/). Se recomienda bifurcarlo a su cuenta en GitHub.
+
 ## Notebooks
 - [Folium](https://github.com/tpb708-programacionsig-2020/leccion-10-folium/blob/master/folium.ipynb)
 
@@ -21,8 +23,8 @@ conda install -c anaconda jupyter
 # Folium
 conda install folium -c conda-forge
 
-# Clonación del repositorio
-git clone https://github.com/tpb708-programacionsig-2020/leccion-10-folium.git
+# Clonación del repositorio (debe sustituir la palabra "usuario" por su nombre de usuario en GitHub)
+git clone https://github.com/usuario/leccion-10-folium.git
 cd leccion-10
 
 # Ejecución de Jupyter Notebook
