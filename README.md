@@ -25,7 +25,7 @@ conda install folium -c conda-forge
 
 # Clonación del repositorio (debe sustituir la palabra "usuario" por su nombre de usuario en GitHub)
 git clone https://github.com/usuario/leccion-10-folium.git
-cd leccion-10
+cd leccion-10-folium
 
 # Ejecución de Jupyter Notebook
 jupyter notebook
