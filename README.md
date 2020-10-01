@@ -15,9 +15,10 @@ conda create -n leccion-10
 # Activación del ambiente
 conda activate leccion-10
 
-# Instalación de paquetes
+# Instalación de módulos
 # Jupyter
 conda install -c anaconda jupyter
+# Folium
 conda install folium -c conda-forge
 
 # Clonación del repositorio
