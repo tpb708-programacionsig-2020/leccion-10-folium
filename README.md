@@ -21,7 +21,9 @@ conda activate leccion-10
 # Jupyter
 conda install -c anaconda jupyter
 # Folium
-conda install folium -c conda-forge
+conda install -c conda-forge folium
+# Pandas
+conda install -c anaconda pandas
 
 # Clonación del repositorio (debe sustituir la palabra "usuario" por su nombre de usuario en GitHub)
 git clone https://github.com/usuario/leccion-10-folium.git
