@@ -4,6 +4,10 @@ El repositorio correspondiente a esta lección está disponible en [https://gith
 
 ## Notebooks
 - [Folium](https://github.com/tpb708-programacionsig-2020/leccion-10-folium/blob/master/folium.ipynb)
+- [Folium - mapas de coropletas](https://github.com/tpb708-programacionsig-2020/leccion-10-folium/blob/master/folium-coropletas.ipynb)
+
+## Visualización de notebooks
+- [Folium - mapas de coropletas]()
 
 ## Creación de un ambiente Conda y clonación del repositorio
 Ejecute estos comandos desde la línea de comandos de Anaconda, en el directorio en el que desea almacenar el repositorio clonado.
