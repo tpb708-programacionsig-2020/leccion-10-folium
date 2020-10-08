@@ -6,11 +6,19 @@ library(sf)
 
 #--------------- Archivos de datos ----------------
 
+# COVID19
 archivo_general_pais <- 'https://raw.githubusercontent.com/tpb708-programacionsig-2020/datos/main/covid19/ministerio-salud/10_07_CSV_GENERAL.csv'
 archivo_positivos_cantones <- 'https://raw.githubusercontent.com/tpb708-programacionsig-2020/datos/main/covid19/ministerio-salud/10_07_CSV_POSITIVOS.csv'
 archivo_activos_cantones <- 'https://raw.githubusercontent.com/tpb708-programacionsig-2020/datos/main/covid19/ministerio-salud/10_07_CSV_ACTIVOS.csv'
 archivo_recuperados_cantones <- 'https://raw.githubusercontent.com/tpb708-programacionsig-2020/datos/main/covid19/ministerio-salud/10_07_CSV_RECUP.csv'
 archivo_fallecidos_cantones <- 'https://raw.githubusercontent.com/tpb708-programacionsig-2020/datos/main/covid19/ministerio-salud/10_07_CSV_FALLECIDOS.csv'
+
+# DIVISÓN POLÍTICA
+# Dirección base del servicio WFS
+url_base_wfs <- "http://geos.snitcr.go.cr/be/IGN_5/wfs?"
+# Solicitud de la capa WFS:
+solicitud_wfs <- 
+  "request=GetFeature&service=WFS&version=2.0.0&typeName=IGN_5:limitecantonal_5k&outputFormat=application/json"
 
 #--------------- Otros parámetros -----------------
 # Separador para lectura de datos CSV
@@ -104,3 +112,14 @@ df_fallecidos_cantones_ultima_fecha <-
 
 # Escritura de CSV
 write.csv(x=df_fallecidos_cantones_ultima_fecha, file="C:/Users/mfvargas/10_07_CSV_FALLECIDOS_ULTIMA_FECHA.csv")
+
+# CANTONES
+
+# Recuperación de los datos en un data frame
+sf_cantones_crtm05 <- st_read(paste0(url_base_wfs, solicitud_wfs))
+
+# Reproyección
+sf_cantones <- st_transform(sf_cantones_crtm05, 4326)
+
+# Escritura de GeoJSON
+st_write(obj = sf_cantones, dsn = "C:/Users/mfvargas/cr_cantones_wgs84.geojson")
