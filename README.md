@@ -17,7 +17,7 @@ Ejecute estos comandos desde la línea de comandos de Anaconda, en el directorio
 # Actualización de Conda
 conda update -n base -c defaults conda
 
-# Creación de un ambiente de nombre "comandos-gdal"
+# Creación del ambiente
 conda create -n leccion-10
 
 # Activación del ambiente
