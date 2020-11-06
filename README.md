@@ -26,7 +26,7 @@ conda activate leccion-10
 # Instalación de módulos
 conda config --env --add channels conda-forge
 conda config --env --set channel_priority strict
-conda install -c anaconda pandas folium jupyter
+conda install pandas folium jupyter
 
 # Clonación del repositorio (debe sustituir la palabra "usuario" por su nombre de usuario en GitHub)
 git clone https://github.com/usuario/leccion-10-folium.git
