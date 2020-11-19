@@ -17,19 +17,16 @@ Ejecute estos comandos desde la línea de comandos de Anaconda, en el directorio
 # Actualización de Conda
 conda update -n base -c defaults conda
 
-# Creación de un ambiente de nombre "comandos-gdal"
+# Creación del ambiente
 conda create -n leccion-10
 
 # Activación del ambiente
 conda activate leccion-10
 
 # Instalación de módulos
-# Jupyter
-conda install -c anaconda jupyter
-# Folium
-conda install -c conda-forge folium
-# Pandas
-conda install -c anaconda pandas
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+conda install pandas folium jupyter
 
 # Clonación del repositorio (debe sustituir la palabra "usuario" por su nombre de usuario en GitHub)
 git clone https://github.com/usuario/leccion-10-folium.git
